@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Weather App</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="https://kit.fontawesome.com/2bb6035038.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+      <div class="container" id="container">
+            <div class="title">Weather App</div>
+            <div class="search">
+                  <div class="input"><input type="text" name="search" id="search" placeholder="Search City"></div>
+                  <div class="search-btn" id="search-btn">
+                        <button id="search-icon">
+                              <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                  </div>
+            </div>
+            <div class="error" id="error">City not found</div>
+      </div>
+
+      <div class="weather-box" id="weather-box">
+            <div class="back" id="back"><i class="fa-solid fa-arrow-left-long"></i></div>
+            <div class="temp-unit" id="temp-unit">°C</div>
+            <div class="weather" id="weather">Smoke</div>
+            <div class="location">
+                  <p class="city" id="city">Mumbai</p>
+                  <p>,</p>
+                  <p class="country" id="country">IN</p>
+            </div>
+            <div class="main">
+                  <div class="temp">
+                        <p id="temp">99.9</p>
+                        <p>°</p>
+                  </div>
+                  <div class="info">
+                        <div class="details">
+                              <p>Feels like: </p>
+                              <p id="altTemp">99.9</p>
+                              <p class="no-margin">°</p>
+                        </div>
+                        <div class="details">
+                              <p>Humidity: </p>
+                              <p id="humidity">50</p>
+                              <p>%</p>
+                        </div>
+                        <div class="details">
+                              <p>Pressure: </p>
+                              <p id="pressure">1010</p>
+                              <p>mb</p>
+                        </div>
+                        <div class="details">
+                              <p>Wind: </p>
+                              <p id="wind">3.08</p>
+                              <p>km/h</p>
+                        </div>
+                  </div>
+            </div>
+      </div>
+
+      <script src="./main.js"></script>
+</body>
+
+</html>
