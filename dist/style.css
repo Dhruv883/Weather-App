@@ -233,7 +233,7 @@ input {
 
 @media (max-width:990px) {}
 
-@media (max-width:500px) {
+@media (max-width:600px) {
       .title {
             margin-top: 10px;
             font-size: 2rem;
@@ -268,11 +268,7 @@ input {
       }
 
       .details p {
-            font-size: 10px;
-      }
-
-      .details {
-            border: 2px solid greenyellow;
+            font-size: 15px;
       }
 
       .location p {
@@ -283,11 +279,10 @@ input {
             padding: 10px 0;
             justify-content: center;
             width: 100%;
-            border-bottom: 2px solid var(--beige);
       }
 
       .temp :nth-child(1) {
-            font-size: 50px;
+            font-size: 80px;
       }
 
       .temp :nth-child(2) {
@@ -306,15 +301,15 @@ input {
       .back {
             font-size: 15px;
             padding: 10px 12px;
-            top: 23vh;
-            left: 12vw;
+            top: 24vh;
+            left: 11vw;
       }
 
       .temp-unit {
             font-size: 15px;
             padding: 12px 14px;
-            top: 25vh;
-            right: 24.5vw;
+            top: 24vh;
+            right: 14.5vw;
       }
 
       .info {
