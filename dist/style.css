@@ -39,7 +39,7 @@ body {
       background-color: var(--bg);
       font-family: 'Quicksand', sans-serif;
       box-shadow: -5px 6px 10px -9px black, 5px 6px 10px -9px black;
-      /* display: none; */
+      display: none;
 }
 
 .title {
@@ -113,7 +113,7 @@ input {
       color: white;
       background-color: var(--bg);
       font-family: 'Quicksand', sans-serif;
-      display: none;
+      /* display: none; */
 }
 
 .weather {
@@ -231,8 +231,7 @@ input {
       transform: scale(1.05);
 }
 
-/* 
-@media (max-width:78px) {}
+@media (max-width:990px) {}
 
 @media (max-width:500px) {
       .title {
@@ -244,15 +243,24 @@ input {
             font-size: 1em;
       }
 
+      .container {
+            width: 70vw;
+            height: 40vh;
+      }
+
+      .search {
+            justify-content: space-between;
+      }
+
       input {
             font-size: 1em;
             padding: 0px 0px 5px 0px;
-            width: 25vw;
+            width: 30vw;
       }
 
       #search-icon {
-            height: 9vh;
-            width: 8vw;
+            height: 50px;
+            width: 50px;
       }
 
       .weather-box {
@@ -260,7 +268,11 @@ input {
       }
 
       .details p {
-            font-size: 12px;
+            font-size: 10px;
+      }
+
+      .details {
+            border: 2px solid greenyellow;
       }
 
       .location p {
@@ -268,11 +280,14 @@ input {
       }
 
       .temp {
-            padding: 0px 15px 0px 10px;
+            padding: 10px 0;
+            justify-content: center;
+            width: 100%;
+            border-bottom: 2px solid var(--beige);
       }
 
       .temp :nth-child(1) {
-            font-size: 60px;
+            font-size: 50px;
       }
 
       .temp :nth-child(2) {
@@ -285,6 +300,7 @@ input {
 
       .main {
             justify-content: space-evenly;
+            flex-direction: column;
       }
 
       .back {
@@ -301,4 +317,14 @@ input {
             right: 24.5vw;
       }
 
-} */
+      .info {
+            height: 15vh;
+            border-left: none;
+            width: 100%;
+      }
+
+      .info div {
+            border: none;
+      }
+
+}
