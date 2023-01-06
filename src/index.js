@@ -6,6 +6,7 @@ let tempUnit = document.getElementById('temp-unit')
 let search = document.getElementById('search')
 let back = document.getElementById('back')
 let searchIcon = document.getElementById('search-btn');
+let error = document.getElementById('error')
 
 searchIcon.addEventListener('click', async () => {
       if (search.value !== '') {
@@ -29,6 +30,7 @@ back.addEventListener('click', () => {
       disp.toggle(1);
       search.value = ''
       tempUnit.textContent = '°C'
+      error.setAttribute('style', 'display:none')
 })
 
 

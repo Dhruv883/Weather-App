@@ -38,7 +38,7 @@ body {
       padding: 2em;
       border-radius: 30px;
       background-color: var(--bg);
-      display: none;
+      /* display: none; */
 }
 
 .title {
@@ -110,7 +110,7 @@ input {
       color: white;
       background-color: var(--bg);
       font-family: 'Quicksand', sans-serif;
-      /* display: none; */
+      display: none;
 }
 
 .weather {
