@@ -4,7 +4,7 @@
       --dark: #1d2f42;
       --light: #162f2d;
       --light-grey: #afaeae;
-      --bg: #182c35;
+      --bg: #142730;
       --beige: #f2ebd3;
       --dark-aqua: #45b29d;
       --border: #4e7774;
@@ -29,18 +29,21 @@ body {
 }
 
 .container {
-      border: 2px solid red;
+      /* border: 2px solid red; */
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      margin-top: -2em;
+      padding: 2em;
+      border-radius: 30px;
+      background-color: var(--bg);
       /* display: none; */
 }
 
 .title {
       font-size: 3.5em;
       text-align: center;
-      margin-top: -1.5em;
       color: var(--beige);
 }
 
@@ -63,8 +66,9 @@ input {
 }
 
 #search::placeholder {
-      font-size: 1.25em;
+      font-size: 1em;
       color: var(--light-grey);
+      opacity: 0.5;
 }
 
 #search-icon {
@@ -91,8 +95,8 @@ input {
       font-size: 1em;
       position: relative;
       top: -1em;
-      left: -5em;
-      display: none;
+      left: -6em;
+      /* display: none; */
 }
 
 .weather-box {
