@@ -38,7 +38,6 @@ body {
       border-radius: 30px;
       background-color: var(--bg);
       font-family: 'Quicksand', sans-serif;
-      box-shadow: -5px 6px 10px -9px black, 5px 6px 10px -9px black;
       display: none;
 }
 
@@ -108,6 +107,8 @@ input {
 }
 
 .weather-box {
+      display: flex;
+      flex-direction: column;
       border-radius: 30px;
       padding: 20px;
       color: white;
@@ -231,7 +232,83 @@ input {
       transform: scale(1.05);
 }
 
-@media (max-width:990px) {}
+@media (max-width:1200px) {
+      .title {
+            font-size: 2rem;
+      }
+
+      .main {
+            width: auto;
+            justify-content: space-evenly;
+      }
+
+      .container {
+            width: 60vw;
+            height: 40vh;
+      }
+
+      input {
+            font-size: 2rem;
+            width: 35vw;
+      }
+
+      #search::placeholder {
+            font-size: 2rem;
+      }
+
+      #search-icon {
+            height: 60px;
+            width: 60px;
+      }
+
+      .search {
+            justify-content: center;
+      }
+
+      .temp {
+            padding: 0 20px;
+      }
+
+      .temp :nth-child(1) {
+            font-size: calc(7em + 1.5vw);
+      }
+
+      .temp :nth-child(2) {
+            font-size: calc(3em + 1vw);
+      }
+
+      .weather {
+            font-size: 40px;
+      }
+
+      .weather-box {
+            width: 70vw;
+      }
+
+      .location p {
+            font-size: 50px;
+      }
+
+      .details p {
+            font-size: calc(0.5rem + 1vw);
+      }
+
+      .info div {
+            padding: 5px calc(0.5rem + 1vw);
+      }
+
+      .back {
+            position: absolute;
+            top: 25vh;
+            left: 5vw;
+      }
+
+      .temp-unit {
+            position: absolute;
+            top: 26vh;
+            right: 20vw;
+      }
+}
 
 @media (max-width:600px) {
       .title {
@@ -299,17 +376,16 @@ input {
       }
 
       .back {
+            position: absolute;
             font-size: 15px;
             padding: 10px 12px;
-            top: 24vh;
-            left: 11vw;
       }
 
       .temp-unit {
+            position: absolute;
             font-size: 15px;
             padding: 12px 14px;
-            top: 24vh;
-            right: 14.5vw;
+            top: 30vh;
       }
 
       .info {

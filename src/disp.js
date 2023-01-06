@@ -26,11 +26,11 @@ const disp = (() => {
 
             if (num === 0) {
                   container.setAttribute('style', 'display:none')
-                  weatherBox.setAttribute('style', 'display:block')
+                  weatherBox.setAttribute('style', 'display:flex')
             }
             else {
                   weatherBox.setAttribute('style', 'display:none')
-                  container.setAttribute('style', 'display:block')
+                  container.setAttribute('style', 'display:flex')
             }
       }
 
