@@ -29,17 +29,15 @@ body {
 }
 
 .container {
-      width: 100vw;
-      height: 100vh;
+      border: 2px solid red;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      display: none;
+      /* display: none; */
 }
 
 .title {
-      width: 50vw;
       font-size: 3.5em;
       text-align: center;
       margin-top: -1.5em;
@@ -94,10 +92,9 @@ input {
       position: relative;
       top: -1em;
       left: -5em;
-      /* display: none; */
+      display: none;
 }
 
-/* ----- */
 .weather-box {
       position: relative;
       display: flex;
@@ -109,7 +106,7 @@ input {
       color: white;
       background-color: var(--bg);
       font-family: 'Quicksand', sans-serif;
-      /* display: none; */
+      display: none;
 }
 
 .weather {
