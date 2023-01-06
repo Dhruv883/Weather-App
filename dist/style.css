@@ -96,7 +96,7 @@ input {
       position: relative;
       top: -1em;
       left: -6em;
-      /* display: none; */
+      display: none;
 }
 
 .weather-box {
@@ -190,7 +190,7 @@ input {
       border-radius: 100%;
       position: absolute;
       top: 0.5em;
-      left: -2.5em;
+      left: -2.25em;
       cursor: pointer;
       background: var(--dark-aqua);
 }
@@ -221,84 +221,91 @@ input {
       transform: scale(1.05);
 }
 
-/* @media (max-width:1200px) {
-      .title {
-            font-size: 2rem;
-      }
-
-      .main {
-            width: auto;
-            justify-content: space-evenly;
-      }
-
+@media (max-width:768px) {
       .container {
-            width: 60vw;
-            height: 40vh;
+            margin-top: -2em;
+            padding: 1em;
+            border-radius: 30px;
+      }
+
+      .title {
+            font-size: 1.5em;
       }
 
       input {
-            font-size: 2rem;
-            width: 35vw;
+            font-size: 1.25em;
+            height: 2em;
+            margin: 1em;
       }
 
       #search::placeholder {
-            font-size: 2rem;
+            font-size: 1em;
       }
 
       #search-icon {
-            height: 60px;
-            width: 60px;
+            width: 4.5em;
+            height: 4.5em;
       }
 
-      .search {
-            justify-content: center;
+      #search-icon i {
+            font-size: 2em;
+            color: var(--dark);
       }
 
-      .temp {
-            padding: 0 20px;
+      .error {
+            font-size: 1em;
+            top: -1em;
+            left: -4em;
       }
 
-      .temp :nth-child(1) {
-            font-size: calc(7em + 1.5vw);
-      }
 
-      .temp :nth-child(2) {
-            font-size: calc(3em + 1vw);
+      .weather-box {
+            padding: 1em;
       }
 
       .weather {
-            font-size: 40px;
+            font-size: 1.75em;
       }
 
-      .weather-box {
-            width: 70vw;
+      .location {
+            font-size: 2.5em;
+            margin-bottom: 0.25em;
       }
 
-      .location p {
-            font-size: 50px;
+      .country {
+            margin-left: 0.3em;
       }
 
-      .details p {
-            font-size: calc(0.5rem + 1vw);
+      .temp {
+            padding: 0px calc(0.5em + 2.5vw);
       }
 
-      .info div {
-            padding: 5px calc(0.5rem + 1vw);
+      .temp :nth-child(1) {
+            font-size: 4em;
+      }
+
+      .temp :nth-child(2) {
+            font-size: 2.5em;
+      }
+
+      .details {
+            padding: 0.2em;
+            font-size: 1em;
       }
 
       .back {
-            position: absolute;
-            top: 25vh;
-            left: 5vw;
+            font-size: 1.5em;
+            top: -2.5em;
+            left: 0.25em;
       }
 
       .temp-unit {
-            position: absolute;
-            top: 26vh;
-            right: 20vw;
+            font-size: 1.5em;
+            top: 1em;
+            right: 1em;
       }
 }
-*/
+
 @media (max-width:500px) {
 
       .container {
@@ -315,6 +322,10 @@ input {
             font-size: 1em;
             height: 2em;
             margin: 1em;
+      }
+
+      .main {
+            justify-content: space-evenly;
       }
 
       #search::placeholder {
