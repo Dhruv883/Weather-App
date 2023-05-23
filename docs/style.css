@@ -336,15 +336,15 @@ input {
     font-size: 0.75em;
   }
 
-  #search-icon {
+  /* #search-icon {
     width: 2.5em;
     height: 2.5em;
-  }
+  } */
 
-  #search-icon i {
+  /* #search-icon i {
     font-size: 1em;
     color: var(--dark);
-  }
+  } */
 
   .error {
     font-size: 0.5em;
